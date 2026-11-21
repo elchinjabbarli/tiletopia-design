@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="passionfruit">
+  <defs>
+    <radialGradient id="tgrad" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#fff6e5"/>
+      <stop offset="100%" stop-color="#ffedc9"/>
+    </radialGradient>
+    <radialGradient id="pg" cx="36%" cy="30%" r="75%"><stop offset="0%" stop-color="#e3a8ef"/><stop offset="100%" stop-color="#7c3a8c" stop-opacity="0"/></radialGradient>
+  </defs>
+  
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#e8b06b" stroke="#a96f38" stroke-width="3"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="url(#tgrad)"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="none" stroke="#c98a4b" stroke-width="2"/>
+  
+  
+  <circle cx="64" cy="68" r="34" fill="#a34db3" stroke="#6f2f80" stroke-width="3"/>
+  <circle cx="64" cy="68" r="34" fill="url(#pg)" opacity="0.35"/>
+  <path d="M46 50 Q64 40 82 50" fill="none" stroke="#d9a0e3" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="64" cy="68" r="12" fill="#4f2358"/>
+  <circle cx="60" cy="64" r="3" fill="#f7e08a"/><circle cx="69" cy="66" r="2.4" fill="#f7e08a"/><circle cx="64" cy="73" r="2.2" fill="#f7e08a"/>
+</svg>

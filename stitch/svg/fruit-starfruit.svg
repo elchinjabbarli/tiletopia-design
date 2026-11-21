@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="starfruit">
+  <defs>
+    <radialGradient id="tgrad" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#fff6e5"/>
+      <stop offset="100%" stop-color="#ffedc9"/>
+    </radialGradient>
+    
+  </defs>
+  
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#e8b06b" stroke="#a96f38" stroke-width="3"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="url(#tgrad)"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="none" stroke="#c98a4b" stroke-width="2"/>
+  
+  
+  <path d="M64 30 L74 56 L102 64 L74 72 L64 98 L54 72 L26 64 L54 56 Z" fill="#ffd23f" stroke="#c29a12" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M64 30 L64 98 M26 64 L102 64 M54 56 L74 72 M74 56 L54 72" stroke="#e6b31c" stroke-width="2" opacity="0.7"/>
+  <path d="M60 40 L64 56 M70 60 L88 64 M70 68 L64 84 M58 68 L40 64 M58 60 L64 56" stroke="#fff3b0" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="kokohappy">
+  <use href="koko-idle.svg#koko"/>
+  <!-- closed happy eyes drawn over -->
+  <path d="M88 62 Q96 54 104 62 M120 62 Q128 54 136 62" stroke="#2a1c12" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <path d="M104 86 Q112 96 120 86" stroke="#b06a10" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>

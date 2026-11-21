@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2ec4b6"/>
+      <stop offset="55%" stop-color="#7fe3d0"/>
+      <stop offset="100%" stop-color="#ffe9b8"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="42%" r="34%">
+      <stop offset="0%" stop-color="#fff7d6"/>
+      <stop offset="60%" stop-color="#ffd23f"/>
+      <stop offset="100%" stop-color="#ffb42e"/>
+    </radialGradient>
+    <radialGradient id="tileG" cx="46%" cy="34%" r="80%">
+      <stop offset="0%" stop-color="#fff6e5"/>
+      <stop offset="100%" stop-color="#ffedc9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#sky)"/>
+  <circle cx="512" cy="430" r="210" fill="url(#sun)"/>
+  <!-- stylized waves -->
+  <path d="M0 858 q128 -60 256 0 t 256 0 t 256 0 t 256 0 v166 H0 Z" fill="#2a9d8f" opacity="0.85"/>
+  <path d="M0 900 q128 -44 256 0 t 256 0 t 256 0 t 256 0 v124 H0 Z" fill="#21867a"/>
+  <!-- three tiles pyramid -->
+  <g transform="translate(512 560)">
+    <!-- back tile (watermelon) -->
+    <g transform="translate(-176 -208) rotate(-6)">
+      <rect x="8" y="8" width="304" height="304" rx="52" fill="#c98a4b" stroke="#a96f38" stroke-width="8"/>
+      <rect x="26" y="26" width="268" height="268" rx="38" fill="url(#tileG)"/>
+      <g transform="translate(112 112)">
+        <path d="M-60 60 A64 64 0 0 1 60 60 Z" fill="#ff5f6d" stroke="#c22b3a" stroke-width="6"/>
+        <path d="M-60 60 A64 64 0 0 1 60 60" fill="none" stroke="#2e8b3d" stroke-width="14"/>
+        <circle cx="-24" cy="44" r="5" fill="#231f20"/><circle cx="0" cy="24" r="5" fill="#231f20"/><circle cx="18" cy="46" r="5" fill="#231f20"/>
+      </g>
+    </g>
+    <!-- right tile (pineapple) -->
+    <g transform="translate(-128 -208) rotate(4)">
+      <rect x="8" y="8" width="304" height="304" rx="52" fill="#c98a4b" stroke="#a96f38" stroke-width="8"/>
+      <rect x="26" y="26" width="268" height="268" rx="38" fill="url(#tileG)"/>
+      <g transform="translate(134 130)">
+        <ellipse cx="0" cy="10" rx="72" ry="88" fill="#f2a83c" stroke="#b06f18" stroke-width="6"/>
+        <path d="M-56 -10 L-30 -16 M-30 56 L0 60 M30 -10 L56 6 M-56 44 L-30 52 M56 44 L30 60 M0 -18 L-30 -10 M0 -18 L30 -10 M0 68 L-30 52 M0 68 L30 60" stroke="#c67f24" stroke-width="5" stroke-linecap="round"/>
+        <path d="M-8 -52 L-24 -84 M0 -56 L0 -96 M8 -52 L24 -84 M-24 -44 L-48 -60 M24 -44 L48 -60" stroke="#3e8f4a" stroke-width="12" stroke-linecap="round"/>
+      </g>
+    </g>
+    <!-- front tile (banana) -->
+    <g transform="translate(-152 -40) rotate(0)">
+      <rect x="8" y="8" width="304" height="304" rx="52" fill="#c98a4b" stroke="#a96f38" stroke-width="8"/>
+      <rect x="26" y="26" width="268" height="268" rx="38" fill="url(#tileG)"/>
+      <g transform="translate(134 150)">
+        <path d="M-64 -40 Q-52 32 -6 52 Q48 70 68 38 Q56 66 -8 60 Q-56 52 -60 -28 Z" fill="#f7d154" stroke="#b98d1e" stroke-width="6" stroke-linejoin="round"/>
+        <path d="M-64 -40 Q-56 26 -8 52" fill="none" stroke="#f9e08a" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+        <path d="M68 38 l18 -14 -4 20 z" fill="#8a6a1d"/>
+      </g>
+    </g>
+  </g>
+  <!-- sparkle -->
+  <g fill="#ffffff" opacity="0.9">
+    <path d="M212 240 l10 34 34 10 -34 10 -10 34 -10 -34 -34 -10 34 -10 z"/>
+    <path d="M812 214 l8 26 26 8 -26 8 -8 26 -8 -26 -26 -8 26 -8 z" opacity="0.8"/>
+  </g>
+</svg>

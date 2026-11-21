@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="mango">
+  <defs>
+    <radialGradient id="tgrad" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#fff6e5"/>
+      <stop offset="100%" stop-color="#ffedc9"/>
+    </radialGradient>
+    
+  </defs>
+  
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#e8b06b" stroke="#a96f38" stroke-width="3"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="url(#tgrad)"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="none" stroke="#c98a4b" stroke-width="2"/>
+  
+  
+  <path d="M38 44 Q34 78 58 92 Q86 104 98 78 Q104 54 82 42 Q56 32 38 44 Z" fill="#ff9f2e" stroke="#c26a10" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M44 52 Q46 74 64 84" fill="none" stroke="#ffcf8a" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M70 36 Q84 22 98 30 Q92 46 74 44 Z" fill="#4aa04f" stroke="#2f7031" stroke-width="2.5"/>
+  <path d="M76 38 Q86 30 94 32" fill="none" stroke="#66b96a" stroke-width="3" stroke-linecap="round"/>
+</svg>

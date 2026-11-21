@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="coconut">
+  <defs>
+    <radialGradient id="tgrad" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#fff6e5"/>
+      <stop offset="100%" stop-color="#ffedc9"/>
+    </radialGradient>
+    <radialGradient id="cgrad" cx="38%" cy="32%" r="70%"><stop offset="0%" stop-color="#c79a6a"/><stop offset="100%" stop-color="#6b4423" stop-opacity="0"/></radialGradient>
+  </defs>
+  
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#e8b06b" stroke="#a96f38" stroke-width="3"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="url(#tgrad)"/>
+  <rect x="12" y="12" width="112" height="112" rx="16" ry="16" fill="none" stroke="#c98a4b" stroke-width="2"/>
+  
+  
+  <circle cx="64" cy="66" r="34" fill="#8a5a33" stroke="#5f3c1f" stroke-width="3"/>
+  <circle cx="64" cy="66" r="34" fill="url(#cgrad)" opacity="0.5"/>
+  <circle cx="52" cy="56" r="5" fill="#4a2f16"/>
+  <circle cx="76" cy="56" r="5" fill="#4a2f16"/>
+  <circle cx="64" cy="78" r="6" fill="#4a2f16"/>
+  <path d="M40 48 Q64 36 88 48" fill="none" stroke="#a9743f" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+</svg>

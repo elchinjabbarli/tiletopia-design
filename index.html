@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiletopia — Design</title>
+<meta name="description" content="Tiletopia design system: brand, palette, components, assets and screen references.">
+<style>
+  :root{
+    --wood:#c98a4b; --wood-dark:#a96f38; --cream:#fff6e5; --cream-2:#ffedc9;
+    --sun:#ffd23f; --teal:#2ec4b6; --teal-dark:#21867a; --coral:#ff5f6d;
+    --orange:#ff8f5e; --ink:#5c3a1e; --ink-soft:#7a4a21;
+    --radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+    background:linear-gradient(180deg,#2ec4b6 0%,#7fe3d0 60%,#ffe9b8 100%);
+    min-height:100vh;
+    padding:clamp(16px,4vw,48px);
+    padding-top:max(clamp(16px,4vw,48px),env(safe-area-inset-top));
+    padding-bottom:max(clamp(16px,4vw,48px),env(safe-area-inset-bottom));
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+  header{text-align:center;margin-bottom:clamp(20px,5vw,40px)}
+  h1{
+    font-weight:900;letter-spacing:.04em;
+    font-size:clamp(2rem,7vw,3.4rem);
+    text-shadow:0 2px 8px rgba(0,0,0,.18);
+    color:var(--cream);
+  }
+  header p{color:#12403a;font-size:clamp(.85rem,2.5vw,1rem);margin-top:.5em}
+  .card{
+    background:rgba(255,246,229,.96);
+    border-radius:var(--radius);
+    box-shadow:0 10px 24px rgba(42,84,66,.35);
+    padding:clamp(14px,3vw,28px);
+    margin-bottom:clamp(14px,3vw,26px);
+  }
+  h2{font-size:clamp(1.1rem,3.5vw,1.5rem);font-weight:900;letter-spacing:.04em;margin-bottom:.6em;color:var(--ink-soft)}
+  .grid{display:grid;gap:clamp(8px,2vw,16px)}
+  .palette{grid-template-columns:repeat(auto-fill,minmax(120px,1fr))}
+  .swatch{border-radius:12px;overflow:hidden;background:var(--cream-2);box-shadow:0 4px 10px rgba(42,84,66,.2)}
+  .swatch .chip{height:64px}
+  .swatch .lbl{padding:8px 10px;font-size:12.5px;font-weight:700}
+  .swatch .lbl code{font-weight:400}
+  .assets{grid-template-columns:repeat(auto-fill,minmax(90px,1fr))}
+  .assets img{width:100%;height:auto;display:block;border-radius:10px;background:var(--cream-2);padding:8px}
+  .screens{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}
+  .screens img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 8px 18px rgba(42,84,66,.3)}
+  .screens figcaption{font-size:12.5px;text-align:center;margin-top:6px;color:var(--ink-soft)}
+  .brandrow{display:flex;flex-wrap:wrap;gap:clamp(10px,2vw,20px);align-items:center;justify-content:center}
+  .brandrow img{width:clamp(120px,28vw,220px);height:auto;border-radius:22%;box-shadow:0 10px 22px rgba(42,84,66,.35)}
+  .btnrow{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:10px}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    border:none;border-radius:999px;cursor:default;
+    font:800 clamp(15px,4vw,19px)/1 inherit;font-family:inherit;letter-spacing:.06em;
+    padding:16px 26px;min-height:54px;
+    box-shadow:0 6px 0 rgba(0,0,0,.14),0 10px 22px rgba(42,84,66,.28);
+  }
+  .btn--primary{background:linear-gradient(180deg,#ffb42e,#f59f1b);color:#6b3b10}
+  .btn--secondary{background:linear-gradient(180deg,#2ec4b6,#26a89c);color:#06332e}
+  .btn--rewarded{background:linear-gradient(180deg,#ff8f5e,#f2603a);color:#fff}
+  .btn--ghost{background:rgba(255,246,229,.95);color:var(--ink-soft);box-shadow:0 4px 0 rgba(120,84,40,.18)}
+  .btn--adclose{background:rgba(0,0,0,.55);color:#fff;font-size:15px;min-height:44px;padding:10px 18px}
+  table{width:100%;border-collapse:collapse;font-size:clamp(12px,2.6vw,14.5px)}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(120,84,40,.18)}
+  th{font-weight:900;color:var(--ink-soft);letter-spacing:.04em}
+  td code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95em}
+  .scrollx{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  ul{padding-left:1.2em;line-height:1.6;font-size:clamp(13px,2.8vw,15px)}
+  footer{text-align:center;font-size:12.5px;color:#12403a;margin-top:clamp(10px,3vw,20px)}
+  a{color:#0d6e64;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Tiletopia Design</h1>
+    <p>Brand, design system &amp; screen references — derived from the shipped game (v1.0.0). Full spec: <a href="DESIGN-SYSTEM.md">DESIGN-SYSTEM.md</a>.</p>
+  </header>
+
+  <section class="card">
+    <h2>Brand</h2>
+    <div class="brandrow">
+      <img src="brand/png/icon-1024.png" alt="App icon 1024">
+      <img src="brand/png/icon-180.png" alt="App icon 180">
+      <img src="brand/png/icon-167.png" alt="App icon 167">
+      <img src="brand/png/icon-152.png" alt="App icon 152">
+      <img src="brand/png/icon-120.png" alt="App icon 120">
+    </div>
+    <p style="text-align:center;font-size:12.5px;color:var(--ink-soft);margin-top:10px">
+      App Store marketing icon 1024×1024, no alpha, no pre-rounded corners. Full iOS set in <code>brand/png/</code>.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Palette</h2>
+    <div class="grid palette">
+      <div class="swatch"><div class="chip" style="background:#c98a4b"></div><div class="lbl">wood <code>#c98a4b</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#a96f38"></div><div class="lbl">wood-dark <code>#a96f38</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#fff6e5"></div><div class="lbl">cream <code>#fff6e5</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#ffedc9"></div><div class="lbl">cream-2 <code>#ffedc9</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#ffd23f"></div><div class="lbl">sun <code>#ffd23f</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#2ec4b6"></div><div class="lbl">teal <code>#2ec4b6</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#21867a"></div><div class="lbl">teal-dark <code>#21867a</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#ff5f6d"></div><div class="lbl">coral <code>#ff5f6d</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#ff8f5e"></div><div class="lbl">orange <code>#ff8f5e</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#5c3a1e"></div><div class="lbl">ink <code>#5c3a1e</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#7a4a21"></div><div class="lbl">ink-soft <code>#7a4a21</code></div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Components</h2>
+    <div class="btnrow">
+      <button class="btn btn--primary">CONTINUE</button>
+      <button class="btn btn--secondary">LEVELS</button>
+      <button class="btn btn--rewarded">+2 SLOT</button>
+      <button class="btn btn--ghost">SETTINGS</button>
+      <button class="btn btn--adclose">Ad ×</button>
+    </div>
+    <div class="scrollx" style="margin-top:18px">
+      <table>
+        <tr><th>Rule</th><th>Value</th></tr>
+        <tr><td>Button height</td><td><code>min-height:54px</code>, radius <code>999px</code>, press shadow <code>0 6px 0 rgba(0,0,0,.14)</code></td></tr>
+        <tr><td>Icon button</td><td><code>48×48</code>, radius <code>14px</code>, cream <code>rgba(255,246,229,.92)</code></td></tr>
+        <tr><td>Cards</td><td>radius <code>18px</code>, shadow <code>0 10px 24px rgba(42,84,66,.35)</code></td></tr>
+        <tr><td>Safe area</td><td><code>env(safe-area-inset-*)</code> on all four sides</td></tr>
+        <tr><td>Type scale</td><td>title <code>clamp(40px,11vw,64px)</code> → body <code>15px/1.6</code></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Fruit sprites</h2>
+    <div class="grid assets">
+      <img src="assets/fruit-banana.png" alt="banana">
+      <img src="assets/fruit-coconut.png" alt="coconut">
+      <img src="assets/fruit-dragonfruit.png" alt="dragonfruit">
+      <img src="assets/fruit-kiwi.png" alt="kiwi">
+      <img src="assets/fruit-lychee.png" alt="lychee">
+      <img src="assets/fruit-mango.png" alt="mango">
+      <img src="assets/fruit-papaya.png" alt="papaya">
+      <img src="assets/fruit-passionfruit.png" alt="passionfruit">
+      <img src="assets/fruit-pineapple.png" alt="pineapple">
+      <img src="assets/fruit-starfruit.png" alt="starfruit">
+      <img src="assets/fruit-strawberry.png" alt="strawberry">
+      <img src="assets/fruit-watermelon.png" alt="watermelon">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>UI icons &amp; mascot</h2>
+    <div class="grid assets">
+      <img src="ui/icon-pause.png" alt="pause">
+      <img src="ui/icon-undo.png" alt="undo">
+      <img src="ui/icon-hint.png" alt="hint">
+      <img src="ui/icon-shuffle.png" alt="shuffle">
+      <img src="ui/icon-slot.png" alt="slot">
+      <img src="ui/icon-coin.png" alt="coin">
+      <img src="ui/icon-star.png" alt="star">
+      <img src="ui/icon-trophy.png" alt="trophy">
+      <img src="ui/icon-gift.png" alt="gift">
+      <img src="ui/icon-ad.png" alt="ad">
+      <img src="ui/koko-idle.png" alt="Koko idle">
+      <img src="ui/koko-happy.png" alt="Koko happy">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Screen references (v1.0.0, verified)</h2>
+    <div class="grid screens">
+      <figure><img src="screens/01-menu.png" alt="Menu screen"><figcaption>Menu</figcaption></figure>
+      <figure><img src="screens/02-game.png" alt="Game screen"><figcaption>Game</figcaption></figure>
+      <figure><img src="screens/04-pause.png" alt="Pause"><figcaption>Pause</figcaption></figure>
+      <figure><img src="screens/tiletopia-win-screen.png" alt="Win screen"><figcaption>Win</figcaption></figure>
+      <figure><img src="screens/design-mockup-sheet.png" alt="Mockup sheet"><figcaption>Mockup sheet</figcaption></figure>
+    </div>
+  </section>
+
+  <footer>
+    Tiletopia design repo · version 1.0.0 · original art, code and copy ·
+    game: <a href="https://elchinjabbarli.github.io/tiletopia/">elchinjabbarli.github.io/tiletopia</a>
+  </footer>
+</div>
+</body>
+</html>

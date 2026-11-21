@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="koko">
+  <defs>
+    <radialGradient id="body" cx="42%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#ff8f5e"/><stop offset="55%" stop-color="#f2603a"/><stop offset="100%" stop-color="#c7401f"/>
+    </radialGradient>
+  </defs>
+  <!-- tail -->
+  <path d="M150 190 Q198 216 216 252 Q186 240 168 246 Q176 224 154 208 Z" fill="#3f8f4f" stroke="#2c6b39" stroke-width="4"/>
+  <!-- body -->
+  <ellipse cx="112" cy="140" rx="72" ry="84" fill="url(#body)" stroke="#8f2b12" stroke-width="4"/>
+  <!-- belly -->
+  <ellipse cx="112" cy="168" rx="40" ry="46" fill="#ffd9a0" opacity="0.9"/>
+  <!-- wings -->
+  <path d="M44 120 Q18 150 30 196 Q56 178 66 148 Z" fill="#2f70c8" stroke="#1f4f97" stroke-width="4"/>
+  <path d="M180 120 Q206 150 194 196 Q168 178 158 148 Z" fill="#2f70c8" stroke="#1f4f97" stroke-width="4"/>
+  <!-- head -->
+  <circle cx="112" cy="66" r="52" fill="url(#body)" stroke="#8f2b12" stroke-width="4"/>
+  <!-- face patch -->
+  <path d="M84 54 Q112 34 142 54 Q142 84 112 92 Q84 84 84 54 Z" fill="#fff2dc" opacity="0.95"/>
+  <!-- eyes -->
+  <circle cx="96" cy="62" r="11" fill="#fff"/><circle cx="128" cy="62" r="11" fill="#fff"/>
+  <circle cx="98" cy="64" r="6.5" fill="#2a1c12"/><circle cx="126" cy="64" r="6.5" fill="#2a1c12"/>
+  <circle cx="100" cy="61" r="2.2" fill="#fff"/><circle cx="128" cy="61" r="2.2" fill="#fff"/>
+  <!-- beak -->
+  <path d="M104 78 Q112 74 120 78 Q118 96 112 96 Q106 96 104 78 Z" fill="#f5c542" stroke="#b98d1e" stroke-width="3"/>
+  <path d="M104 78 Q112 84 120 78 Q118 86 112 88 Q106 86 104 78 Z" fill="#e0a52a"/>
+  <!-- crest -->
+  <path d="M92 24 Q96 6 108 12 Q112 26 100 32 Z" fill="#ffb42e" stroke="#c8861c" stroke-width="3"/>
+  <path d="M112 18 Q120 2 130 10 Q128 26 116 30 Z" fill="#ff8f2e" stroke="#c8641c" stroke-width="3"/>
+  <!-- feet -->
+  <path d="M92 218 q-6 10 2 14 M92 232 l-8 6 M100 232 l-2 8 M132 218 q6 10 -2 14 M132 232 l8 6 M124 232 l2 8" stroke="#e0a52a" stroke-width="5" stroke-linecap="round" fill="none"/>
+</svg>
